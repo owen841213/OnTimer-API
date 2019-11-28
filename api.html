@@ -35,7 +35,7 @@
 </head>
 
 <body>
-    <div id="doc" class="markdown-body container-fluid" style="position: relative;"><h1 id="API指令集"><a class="anchor hidden-xs" href="#API指令集" title="API指令集"><span class="octicon octicon-link"></span></a>API指令集</h1><p>1.0版本，剩下分錢還沒做，大家加油吧。</p><h1 id="schema"><a class="anchor hidden-xs" href="#schema" title="schema"><span class="octicon octicon-link"></span></a>schema</h1><ol>
+    <div id="doc" class="markdown-body container-fluid" style="position: relative;"><h1 id="API指令集"><a class="anchor hidden-xs" href="#API指令集" title="API指令集"><span class="octicon octicon-link"></span></a>API指令集</h1><p>1.0版本，剩下分錢還沒做，大家加油吧。</p><h1 id="schema"><a class="anchor hidden-xs" href="#schema" title="schema"><span class="octicon octicon-link"></span></a>Schema</h1><ol>
 <li>
 <p>table events:<br>
 <img src="https://i.imgur.com/erNKBfm.png" alt=""></p>
@@ -48,59 +48,59 @@
 <p>table userinfo:<br>
 <img src="https://i.imgur.com/4lG6Ak1.png" alt=""></p>
 </li>
-</ol><hr><h1 id="指令一覽表"><a class="anchor hidden-xs" href="#指令一覽表" title="指令一覽表"><span class="octicon octicon-link"></span></a>指令一覽表</h1><h3 id="1得知前十個該-userID-餐與的聚會"><a class="anchor hidden-xs" href="#1得知前十個該-userID-餐與的聚會" title="1得知前十個該-userID-餐與的聚會"><span class="octicon octicon-link"></span></a>1.得知前十個該 userID 餐與的聚會</h3><p>使用GET</p><p><code>http://ontimer-server-dev.us-west-2.elasticbeanstalk.com/api/events?userid={userid}</code><br>
+</ol><hr><h1 id="指令一覽表"><a class="anchor hidden-xs" href="#指令一覽表" title="指令一覽表"><span class="octicon octicon-link"></span></a>指令一覽表</h1><h3 id="1得知前十個該-userID-參與的聚會"><a class="anchor hidden-xs" href="#1得知前十個該-userID-餐與的聚會" title="1得知前十個該-userID-餐與的聚會"><span class="octicon octicon-link"></span></a>1. 得知前十個該 userID 餐與的聚會</h3><p>使用GET</p><p><code>http://ontimer-server-dev.us-west-2.elasticbeanstalk.com/api/events?userid={userid}</code><br>
 回傳範例:<br>
-<img src="https://i.imgur.com/ajeJZJj.png" alt=""></p><hr><h3 id="2創建聚會"><a class="anchor hidden-xs" href="#2創建聚會" title="2創建聚會"><span class="octicon octicon-link"></span></a>2.創建聚會</h3><p>使用POST<br>
+<img src="https://i.imgur.com/ajeJZJj.png" alt=""></p><hr><h3 id="2創建聚會"><a class="anchor hidden-xs" href="#2創建聚會" title="2創建聚會"><span class="octicon octicon-link"></span></a>2. 創建聚會</h3><p>使用POST<br>
 <code>http://ontimer-server-dev.us-west-2.elasticbeanstalk.com/api/createvents</code><br>
 參考封包範例:<br>
 <img src="https://i.imgur.com/LtxSxMA.png" alt=""></p><p>回傳範例:<br>
-<img src="https://i.imgur.com/7tcBOwX.png" alt=""></p><hr><h3 id="31根據eventid拿取該聚會資料"><a class="anchor hidden-xs" href="#31根據eventid拿取該聚會資料" title="31根據eventid拿取該聚會資料"><span class="octicon octicon-link"></span></a>3.1根據eventid拿取該聚會資料</h3><p>使用GET<br>
+<img src="https://i.imgur.com/7tcBOwX.png" alt=""></p><hr><h3 id="31根據eventid拿取該聚會資料"><a class="anchor hidden-xs" href="#31根據eventid拿取該聚會資料" title="31根據eventid拿取該聚會資料"><span class="octicon octicon-link"></span></a>3.1 根據eventid拿取該聚會資料</h3><p>使用GET<br>
 <code>http://ontimer-server-dev.us-west-2.elasticbeanstalk.com/api/eventinfo?eventid={填入eventid}</code><br>
 回傳範例:<br>
-<img src="https://i.imgur.com/FJpC2CV.png" alt=""></p><hr><h3 id="32拿取前30項聚會資料"><a class="anchor hidden-xs" href="#32拿取前30項聚會資料" title="32拿取前30項聚會資料"><span class="octicon octicon-link"></span></a>3.2拿取前30項聚會資料</h3><p>使用GET<br>
+<img src="https://i.imgur.com/FJpC2CV.png" alt=""></p><hr><h3 id="32拿取前30項聚會資料"><a class="anchor hidden-xs" href="#32拿取前30項聚會資料" title="32拿取前30項聚會資料"><span class="octicon octicon-link"></span></a>3.2 拿取前30項聚會資料</h3><p>使用GET<br>
 <code>http://ontimer-server-dev.us-west-2.elasticbeanstalk.com/api/eventinfoall</code><br>
 回傳範例:<br>
-<img src="https://i.imgur.com/pmYF0LY.png" alt=""></p><hr><h3 id="41修改事件"><a class="anchor hidden-xs" href="#41修改事件" title="41修改事件"><span class="octicon octicon-link"></span></a>4.1修改事件</h3><p>使用POST<br>
+<img src="https://i.imgur.com/pmYF0LY.png" alt=""></p><hr><h3 id="41修改事件"><a class="anchor hidden-xs" href="#41修改事件" title="41修改事件"><span class="octicon octicon-link"></span></a>4.1 修改事件</h3><p>使用POST<br>
 <code>http://ontimer-server-dev.us-west-2.elasticbeanstalk.com/api/modifyevents</code><br>
 參考封包範例:<br>
 <img src="https://i.imgur.com/frdBFxH.png" alt=""></p><p>回傳範例:<br>
-<img src="https://i.imgur.com/B4sumSe.png" alt=""></p><hr><h3 id="42修改事件的獎金池"><a class="anchor hidden-xs" href="#42修改事件的獎金池" title="42修改事件的獎金池"><span class="octicon octicon-link"></span></a>4.2修改事件的獎金池</h3><p><strong>慎用，添加事件不需使用此指令</strong><br>
+<img src="https://i.imgur.com/B4sumSe.png" alt=""></p><hr><h3 id="42修改事件的獎金池"><a class="anchor hidden-xs" href="#42修改事件的獎金池" title="42修改事件的獎金池"><span class="octicon octicon-link"></span></a>4.2 修改事件的獎金池</h3><p><strong>慎用，添加事件不需使用此指令</strong><br>
 使用POST<br>
 <code>http://ontimer-server-dev.us-west-2.elasticbeanstalk.com/api/modifymoney</code><br>
 參考封包範例:<br>
 <img src="https://i.imgur.com/wVVnAG3.png" alt=""></p><p>回傳範例:<br>
-<img src="https://i.imgur.com/Hlmr6Ll.png" alt=""></p><hr><h3 id="43移除事件"><a class="anchor hidden-xs" href="#43移除事件" title="43移除事件"><span class="octicon octicon-link"></span></a>4.3移除事件</h3><p><strong>慎用，只刪除事件資訊但無法刪除參加事件的人歐</strong><br>
+<img src="https://i.imgur.com/Hlmr6Ll.png" alt=""></p><hr><h3 id="43移除事件"><a class="anchor hidden-xs" href="#43移除事件" title="43移除事件"><span class="octicon octicon-link"></span></a>4.3 移除事件</h3><p><strong>慎用，只刪除事件資訊但無法刪除參加事件的人歐</strong><br>
 使用POST<br>
 <code>http://ontimer-server-dev.us-west-2.elasticbeanstalk.com/api/remevent</code><br>
 參考封包範例:<br>
 <img src="https://i.imgur.com/Kul3WI6.png" alt=""></p><p>回傳範例:<br>
-危險DER，我不敢試</p><hr><h3 id="51參加活動"><a class="anchor hidden-xs" href="#51參加活動" title="51參加活動"><span class="octicon octicon-link"></span></a>5.1參加活動</h3><p>使用POST<br>
+危險DER，我不敢試</p><hr><h3 id="51參加活動"><a class="anchor hidden-xs" href="#51參加活動" title="51參加活動"><span class="octicon octicon-link"></span></a>5.1 參加活動</h3><p>使用POST<br>
 <code>http://ontimer-server-dev.us-west-2.elasticbeanstalk.com/api/addmembers</code><br>
 參考封包範例:<br>
 <img src="https://i.imgur.com/DBfr9HH.png" alt=""></p><p>回傳範例：<br>
-<img src="https://i.imgur.com/pdIhb1N.png" alt=""></p><hr><h3 id="52修改個人活動訊息"><a class="anchor hidden-xs" href="#52修改個人活動訊息" title="52修改個人活動訊息"><span class="octicon octicon-link"></span></a>5.2修改個人活動訊息</h3><p>無法更改deposit，可更動confirm<br>
+<img src="https://i.imgur.com/pdIhb1N.png" alt=""></p><hr><h3 id="52修改個人活動訊息"><a class="anchor hidden-xs" href="#52修改個人活動訊息" title="52修改個人活動訊息"><span class="octicon octicon-link"></span></a>5.2 修改個人活動訊息</h3><p>無法更改deposit，可更動confirm<br>
 使用POST<br>
 <code>http://ontimer-server-dev.us-west-2.elasticbeanstalk.com/api/addmembers</code><br>
 參考封包範例:<br>
 <img src="https://i.imgur.com/w8oRKLC.png" alt=""></p><p>回傳範例：<br>
-<img src="https://i.imgur.com/2K9dVQ2.png" alt=""></p><hr><h3 id="53刪除活動"><a class="anchor hidden-xs" href="#53刪除活動" title="53刪除活動"><span class="octicon octicon-link"></span></a>5.3刪除活動</h3><p>會吃錢歐<br>
+<img src="https://i.imgur.com/2K9dVQ2.png" alt=""></p><hr><h3 id="53刪除活動"><a class="anchor hidden-xs" href="#53刪除活動" title="53刪除活動"><span class="octicon octicon-link"></span></a>5.3 刪除活動</h3><p>會吃錢歐<br>
 使用POST<br>
 <code>http://ontimer-server-dev.us-west-2.elasticbeanstalk.com/api/remmembers</code><br>
 參考封包範例:<br>
 <img src="https://i.imgur.com/80N5sqw.png" alt=""></p><p>回傳範例：<br>
-<img src="https://i.imgur.com/72RmLQt.png" alt=""></p><hr><h3 id="6列出該事件所有參與者"><a class="anchor hidden-xs" href="#6列出該事件所有參與者" title="6列出該事件所有參與者"><span class="octicon octicon-link"></span></a>6.列出該事件所有參與者</h3><p>使用GET<br>
+<img src="https://i.imgur.com/72RmLQt.png" alt=""></p><hr><h3 id="6列出該事件所有參與者"><a class="anchor hidden-xs" href="#6列出該事件所有參與者" title="6列出該事件所有參與者"><span class="octicon octicon-link"></span></a>6. 列出該事件所有參與者</h3><p>使用GET<br>
 <code>http://ontimer-server-dev.us-west-2.elasticbeanstalk.com/api/listmember?eventid={evebtid}</code></p><p>回傳範例：<br>
-<img src="https://i.imgur.com/EAc552K.png" alt=""></p><hr><h3 id="71使用者資訊"><a class="anchor hidden-xs" href="#71使用者資訊" title="71使用者資訊"><span class="octicon octicon-link"></span></a>7.1使用者資訊</h3><p>使用GET<br>
+<img src="https://i.imgur.com/EAc552K.png" alt=""></p><hr><h3 id="71使用者資訊"><a class="anchor hidden-xs" href="#71使用者資訊" title="71使用者資訊"><span class="octicon octicon-link"></span></a>7.1 使用者資訊</h3><p>使用GET<br>
 <code>http://ontimer-server-dev.us-west-2.elasticbeanstalk.com/api/userinfo?userid={userid}</code><br>
 回傳範例:<br>
-<img src="https://i.imgur.com/k6jHmjG.png" alt=""></p><hr><h3 id="72列出所有使用者資訊"><a class="anchor hidden-xs" href="#72列出所有使用者資訊" title="72列出所有使用者資訊"><span class="octicon octicon-link"></span></a>7.2列出所有使用者資訊</h3><p>使用GET<br>
+<img src="https://i.imgur.com/k6jHmjG.png" alt=""></p><hr><h3 id="72列出所有使用者資訊"><a class="anchor hidden-xs" href="#72列出所有使用者資訊" title="72列出所有使用者資訊"><span class="octicon octicon-link"></span></a>7.2 列出所有使用者資訊</h3><p>使用GET<br>
 <code>http://ontimer-server-dev.us-west-2.elasticbeanstalk.com/api/userinfoall</code><br>
 回傳範例:<br>
-<img src="https://i.imgur.com/JMnl1GK.png" alt=""></p><hr><h3 id="73新增使用者"><a class="anchor hidden-xs" href="#73新增使用者" title="73新增使用者"><span class="octicon octicon-link"></span></a>7.3新增使用者</h3><p>使用POST<br>
+<img src="https://i.imgur.com/JMnl1GK.png" alt=""></p><hr><h3 id="73新增使用者"><a class="anchor hidden-xs" href="#73新增使用者" title="73新增使用者"><span class="octicon octicon-link"></span></a>7.3 新增使用者</h3><p>使用POST<br>
 <code>http://ontimer-server-dev.us-west-2.elasticbeanstalk.com/api/adduser</code><br>
 參考封包範例：<br>
 <img src="https://i.imgur.com/yUAF9SR.png" alt=""></p><p>回傳範例:<br>
-<img src="https://i.imgur.com/C4t1NUP.png" alt=""></p><hr><h3 id="74修改使用者資料"><a class="anchor hidden-xs" href="#74修改使用者資料" title="74修改使用者資料"><span class="octicon octicon-link"></span></a>7.4修改使用者資料</h3><p><strong>可改money</strong><br>
+<img src="https://i.imgur.com/C4t1NUP.png" alt=""></p><hr><h3 id="74修改使用者資料"><a class="anchor hidden-xs" href="#74修改使用者資料" title="74修改使用者資料"><span class="octicon octicon-link"></span></a>7.4 修改使用者資料</h3><p><strong>可改money</strong><br>
 使用POST<br>
 <code>http://ontimer-server-dev.us-west-2.elasticbeanstalk.com/api/modifyuser</code><br>
 參考封包範例:<br>
@@ -113,12 +113,12 @@
                 <i class="fa fa-bars"></i>
             </a>
             <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
-                <div class="toc"><ul class="nav"><li class=""><a href="#API指令集" title="API指令集">API指令集</a></li><li><a href="#schema" title="schema">schema</a></li><li><a href="#指令一覽表" title="指令一覽表">指令一覽表</a><ul class="nav"><li><a href="#1得知前十個該-userID-餐與的聚會" title="1.得知前十個該 userID 餐與的聚會">1.得知前十個該 userID 餐與的聚會</a></li><li><a href="#2創建聚會" title="2.創建聚會">2.創建聚會</a></li><li><a href="#31根據eventid拿取該聚會資料" title="3.1根據eventid拿取該聚會資料">3.1根據eventid拿取該聚會資料</a></li><li><a href="#32拿取前30項聚會資料" title="3.2拿取前30項聚會資料">3.2拿取前30項聚會資料</a></li><li><a href="#41修改事件" title="4.1修改事件">4.1修改事件</a></li><li><a href="#42修改事件的獎金池" title="4.2修改事件的獎金池">4.2修改事件的獎金池</a></li><li><a href="#43移除事件" title="4.3移除事件">4.3移除事件</a></li><li><a href="#51參加活動" title="5.1參加活動">5.1參加活動</a></li><li><a href="#52修改個人活動訊息" title="5.2修改個人活動訊息">5.2修改個人活動訊息</a></li><li><a href="#53刪除活動" title="5.3刪除活動">5.3刪除活動</a></li><li><a href="#6列出該事件所有參與者" title="6.列出該事件所有參與者">6.列出該事件所有參與者</a></li><li><a href="#71使用者資訊" title="7.1使用者資訊">7.1使用者資訊</a></li><li><a href="#72列出所有使用者資訊" title="7.2列出所有使用者資訊">7.2列出所有使用者資訊</a></li><li><a href="#73新增使用者" title="7.3新增使用者">7.3新增使用者</a></li><li><a href="#74修改使用者資料" title="7.4修改使用者資料">7.4修改使用者資料</a></li></ul></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+                <div class="toc"><ul class="nav"><li class=""><a href="#API指令集" title="API指令集">API指令集</a></li><li><a href="#schema" title="schema">schema</a></li><li><a href="#指令一覽表" title="指令一覽表">指令一覽表</a><ul class="nav"><li><a href="#1得知前十個該-userID-餐與的聚會" title="1.得知前十個該 userID 餐與的聚會">1. 得知前十個該 userID 餐與的聚會</a></li><li><a href="#2創建聚會" title="2.創建聚會">2. 創建聚會</a></li><li><a href="#31根據eventid拿取該聚會資料" title="3.1根據eventid拿取該聚會資料">3.1 根據eventid拿取該聚會資料</a></li><li><a href="#32拿取前30項聚會資料" title="3.2拿取前30項聚會資料">3.2 拿取前30項聚會資料</a></li><li><a href="#41修改事件" title="4.1修改事件">4.1 修改事件</a></li><li><a href="#42修改事件的獎金池" title="4.2修改事件的獎金池">4.2 修改事件的獎金池</a></li><li><a href="#43移除事件" title="4.3移除事件">4.3 移除事件</a></li><li><a href="#51參加活動" title="5.1參加活動">5.1 參加活動</a></li><li><a href="#52修改個人活動訊息" title="5.2修改個人活動訊息">5.2 修改個人活動訊息</a></li><li><a href="#53刪除活動" title="5.3刪除活動">5.3 刪除活動</a></li><li><a href="#6列出該事件所有參與者" title="6.列出該事件所有參與者">6. 列出該事件所有參與者</a></li><li><a href="#71使用者資訊" title="7.1使用者資訊">7.1 使用者資訊</a></li><li><a href="#72列出所有使用者資訊" title="7.2列出所有使用者資訊">7.2 列出所有使用者資訊</a></li><li><a href="#73新增使用者" title="7.3新增使用者">7.3 新增使用者</a></li><li><a href="#74修改使用者資料" title="7.4修改使用者資料">7.4 修改使用者資料</a></li></ul></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
             </ul>
         </div>
     </div>
     <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
-        <div class="toc"><ul class="nav"><li class=""><a href="#API指令集" title="API指令集">API指令集</a></li><li><a href="#schema" title="schema">schema</a></li><li><a href="#指令一覽表" title="指令一覽表">指令一覽表</a><ul class="nav"><li><a href="#1得知前十個該-userID-餐與的聚會" title="1.得知前十個該 userID 餐與的聚會">1.得知前十個該 userID 餐與的聚會</a></li><li><a href="#2創建聚會" title="2.創建聚會">2.創建聚會</a></li><li><a href="#31根據eventid拿取該聚會資料" title="3.1根據eventid拿取該聚會資料">3.1根據eventid拿取該聚會資料</a></li><li><a href="#32拿取前30項聚會資料" title="3.2拿取前30項聚會資料">3.2拿取前30項聚會資料</a></li><li><a href="#41修改事件" title="4.1修改事件">4.1修改事件</a></li><li><a href="#42修改事件的獎金池" title="4.2修改事件的獎金池">4.2修改事件的獎金池</a></li><li><a href="#43移除事件" title="4.3移除事件">4.3移除事件</a></li><li><a href="#51參加活動" title="5.1參加活動">5.1參加活動</a></li><li><a href="#52修改個人活動訊息" title="5.2修改個人活動訊息">5.2修改個人活動訊息</a></li><li><a href="#53刪除活動" title="5.3刪除活動">5.3刪除活動</a></li><li><a href="#6列出該事件所有參與者" title="6.列出該事件所有參與者">6.列出該事件所有參與者</a></li><li><a href="#71使用者資訊" title="7.1使用者資訊">7.1使用者資訊</a></li><li><a href="#72列出所有使用者資訊" title="7.2列出所有使用者資訊">7.2列出所有使用者資訊</a></li><li><a href="#73新增使用者" title="7.3新增使用者">7.3新增使用者</a></li><li><a href="#74修改使用者資料" title="7.4修改使用者資料">7.4修改使用者資料</a></li></ul></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+        <div class="toc"><ul class="nav"><li class=""><a href="#API指令集" title="API指令集">API指令集</a></li><li><a href="#schema" title="schema">Schema</a></li><li><a href="#指令一覽表" title="指令一覽表">指令一覽表</a><ul class="nav"><li><a href="#1得知前十個該-userID-餐與的聚會" title="1.得知前十個該 userID 餐與的聚會">1. 得知前十個該 userID 餐與的聚會</a></li><li><a href="#2創建聚會" title="2.創建聚會">2. 創建聚會</a></li><li><a href="#31根據eventid拿取該聚會資料" title="3.1根據eventid拿取該聚會資料">3.1 根據eventid拿取該聚會資料</a></li><li><a href="#32拿取前30項聚會資料" title="3.2拿取前30項聚會資料">3.2 拿取前30項聚會資料</a></li><li><a href="#41修改事件" title="4.1修改事件">4.1 修改事件</a></li><li><a href="#42修改事件的獎金池" title="4.2修改事件的獎金池">4.2 修改事件的獎金池</a></li><li><a href="#43移除事件" title="4.3移除事件">4.3 移除事件</a></li><li><a href="#51參加活動" title="5.1參加活動">5.1 參加活動</a></li><li><a href="#52修改個人活動訊息" title="5.2修改個人活動訊息">5.2 修改個人活動訊息</a></li><li><a href="#53刪除活動" title="5.3刪除活動">5.3 刪除活動</a></li><li><a href="#6列出該事件所有參與者" title="6.列出該事件所有參與者">6. 列出該事件所有參與者</a></li><li><a href="#71使用者資訊" title="7.1使用者資訊">7.1 使用者資訊</a></li><li><a href="#72列出所有使用者資訊" title="7.2列出所有使用者資訊">7.2 列出所有使用者資訊</a></li><li><a href="#73新增使用者" title="7.3新增使用者">7.3 新增使用者</a></li><li><a href="#74修改使用者資料" title="7.4修改使用者資料">7.4 修改使用者資料</a></li></ul></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
