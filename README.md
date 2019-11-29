@@ -1,7 +1,7 @@
 ## OnTimer APIs
 These are all the APIs used in OnTimer APP. The schema of the database is also contained in the webpage.
 
-APIs: https://git.io/Je1s9
+[APIs list for OnTimer](https://git.io/Je1s9)
 
 ## Getting started
 The usage of all APIs and their functions are shown in the web page.
